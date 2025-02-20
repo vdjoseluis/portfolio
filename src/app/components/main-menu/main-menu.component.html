@@ -1,16 +1,15 @@
-<main class="flex flex-col bg-orange-200 max-w-[60%] mx-auto">
-  <div class="flex justify-between">
-    <h1 class="ms-10 text-gray-800 text-4xl">Desarrollador Web</h1>
+<section class="flex flex-col bg-slate-700 w-full xl:max-w-[80%] mx-auto  text-slate-50">
+  <div class="flex justify-between items-center py-4">
+    <h1 class="ms-2 lg:ms-10 text-xl lg:text-3xl font-medium tracking-wider">Desarrollador Web</h1>
     <div class="flex gap-4 me-4">
       <span>Claro</span>
       <span>Español</span>
     </div>
   </div>
   <mat-divider></mat-divider>
-  <nav class="flex justify-end gap-4 me-4">
-    <a routerLink="/about">Acerca de mí</a>
-    <a routerLink="/skills">Tecnologías</a>
-    <a routerLink="/projects">Proyectos</a>
-    <a routerLink="/contact">Contacto</a>
+  <nav class="flex justify-end gap-6 me-4 my-2">
+    @for (item of this.menuItems; track $index) {
+      <a routerLink="{{item.key}}" routerLinkActive="bg-slate-900" class="text-xs lg:tracking-wide lg:font-semibold hover:bg-slate-600 p-2 rounded-md">{{item.value}}</a>
+    }
   </nav>
-</main>
+</section>
