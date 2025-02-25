@@ -1,10 +1,10 @@
 <section
-  class="flex flex-col items-center justify-center w-full xl:max-w-[80%] mx-auto py-16 px-4 shadow-2xl shadow-slate-700 rounded-b-3xl text-slate-700"
+  class="flex flex-col items-center justify-center w-full xl:max-w-[80%] mx-auto py-16 px-4 shadow-2xl shadow-slate-500 rounded-b-3xl"
 >
   <h1
-    class="text-center typing-animation text-2xl md:text-3xl tracking-widest font-medium mb-8"
+    class="text-center typing-animation text-2xl md:text-3xl tracking-widest font-medium mb-8 title-color"
   >
-    Hola, soy
+    {{ "welcomeMessage" | translate }}
     <span class="text-3xl md:text-4xl font-semibold">José Luis !</span>
   </h1>
   <div class="flex flex-col lg:flex-row justify-around px-4">
@@ -12,8 +12,8 @@
       <img src="foto.png" alt="My photo" class="md:h-80 rounded-full" />
       <a
         routerLink="/"
-        class="tracking-wide lg:text-lg font-medium text-slate-800 hover:underline"
-        matTooltip="Descargar PDF"
+        class="tracking-wide lg:text-lg font-medium hover:underline"
+        matTooltip="{{ 'downloadMessage' | translate }}"
         >Curriculum</a
       >
     </article>
@@ -23,27 +23,25 @@
       class="flex flex-col lg:w-[60%] text-justify text-md xl:text-lg xl:tracking-wider xl:px-6 my-6 opacity-0 transition-opacity duration-2000 ease-in-out"
     >
       <p class="lg:mb-4">
-        Desarrollador con Formación Profesional Superior en Aplicaciones Web y
-        Multiplataforma.
+        {{ "aboutText.paragraph1" | translate }}
       </p>
       <p class="lg:mb-4">
-        Apasionado de la tecnología y en constante evolución, amplío mis
-        conocimientos en plataformas educativas digitales.
+        {{ "aboutText.paragraph2" | translate }}
       </p>
       <p class="lg:mb-4">
-        Habilidades principales:
+        {{ "aboutText.paragraph3" | translate }}
         <span class="font-semibold">Angular - React</span>
       </p>
       <p class="lg:mb-10">
-        Me encanta transformar ideas en experiencias funcionales y atractivas.
+        {{ "aboutText.paragraph4" | translate }}
       </p>
 
-      <h2 class="font-semibold my-4">Idiomas:</h2>
+      <h2 class="font-semibold my-4 title-color">{{ "languages.title" | translate }}</h2>
       <ul class="list-disc list-inside">
-        <li>Español - Nativo</li>
-        <li>Inglés - Medio</li>
-        <li>Italiano - Alto</li>
-        <li>Francés - Básico</li>
+        <li>{{ "languages.spanish" | translate }}</li>
+        <li>{{ "languages.english" | translate }}</li>
+        <li>{{ "languages.italian" | translate }}</li>
+        <li>{{ "languages.french" | translate }}</li>
       </ul>
     </article>
   </div>

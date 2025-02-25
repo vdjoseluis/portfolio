@@ -1,15 +1,16 @@
-<section class="flex flex-col bg-slate-700 w-full xl:max-w-[80%] mx-auto  text-slate-50">
+<section class="flex flex-col w-full xl:max-w-[80%] bg-slate-700 text-slate-50 mx-auto">
   <div class="flex justify-between items-center py-4">
-    <h1 class="ms-2 lg:ms-10 text-xl lg:text-3xl font-medium tracking-wider">Desarrollador Web</h1>
+    <h1 class="ms-2 lg:ms-10 text-xl lg:text-3xl font-medium tracking-wider">{{ "menuTitle" | translate }}</h1>
     <div class="flex gap-4 me-4">
-      <span>Claro</span>
-      <span>Español</span>
+      <app-toggle-mode />
+      <app-language-selector/>
     </div>
   </div>
   <mat-divider></mat-divider>
-  <nav class="flex justify-end gap-6 me-4 my-2">
-    @for (item of this.menuItems; track $index) {
-      <a routerLink="{{item.key}}" routerLinkActive="bg-slate-900" class="text-xs lg:tracking-wide lg:font-semibold hover:bg-slate-600 p-2 rounded-md">{{item.value}}</a>
-    }
+  <nav class="flex justify-end gap-6 me-4 my-2 text-xs lg:text-md lg:tracking-wide lg:font-semibold ">
+    <a routerLink="about" routerLinkActive="bg-slate-900" class="hover:bg-slate-600 p-2 rounded-md">{{ "navMenu.about" | translate }}</a>
+    <a routerLink="skills" routerLinkActive="bg-slate-900" class="hover:bg-slate-600 p-2 rounded-md">{{ "navMenu.skills" | translate }}</a>
+    <a routerLink="projects" routerLinkActive="bg-slate-900" class="hover:bg-slate-600 p-2 rounded-md">{{ "navMenu.projects" | translate }}</a>
+    <a routerLink="contact" routerLinkActive="bg-slate-900" class="hover:bg-slate-600 p-2 rounded-md">{{ "navMenu.contact" | translate }}</a>
   </nav>
 </section>

@@ -1,2 +1,4 @@
-<app-main-menu />
-<router-outlet/>
+<main [ngClass]="isDarkMode() ? 'dark' : ''">
+  <app-main-menu />
+  <router-outlet />
+</main>

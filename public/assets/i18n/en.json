@@ -1,0 +1,24 @@
+{
+  "menuTitle": "Web Developer",
+  "navMenu": {
+    "about": "About Me",
+    "skills": "Technologies",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "downloadMessage": "Download CV",
+  "welcomeMessage": "Hello, I'm ",
+  "aboutText": {
+    "paragraph1": "Developer with Advanced Vocational Training in Web and Multiplatform Applications.",
+    "paragraph2": "Passionate about technology and in constant evolution, I expand my knowledge on digital educational platforms.",
+    "paragraph3": "Main skills:",
+    "paragraph4": "I love transforming ideas into functional and attractive experiences."
+  },
+  "languages": {
+    "title": "Languages:",
+    "spanish": "Spanish - Native",
+    "english": "English - Intermediate",
+    "italian": "Italian - Advanced",
+    "french": "French - Basic"
+  }
+}

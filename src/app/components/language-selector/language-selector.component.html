@@ -1,0 +1,17 @@
+<div class="relative inline-block">
+  <button (click)="toggleDropdown()" class="bg-slate-500 rounded-md px-2 py-1 text-white flex items-center">
+    <img [src]="'/assets/flags/' + selectedLang + '.svg'" class="w-5 h-5 mr-2" />
+    {{ selectedLang.toUpperCase() }}
+  </button>
+
+  @if (dropdownOpen){
+    <ul class="absolute bg-slate-500 rounded-md mt-2 w-full shadow-md">
+      @for (lang of languages(); track $index) {
+        <li (click)="selectLang(lang.key)" class="p-2 hover:bg-slate-700 flex items-center cursor-pointer">
+          <img [src]="'/assets/flags/' + lang.key + '.svg'" class="w-5 h-5 mr-2" />
+          {{ lang.value }}
+        </li>
+      }
+    </ul>
+  }
+</div>

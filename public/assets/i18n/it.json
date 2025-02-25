@@ -1,0 +1,24 @@
+{
+  "menuTitle": "Sviluppatore Web",
+  "navMenu": {
+    "about": "Su di me",
+    "skills": "Tecnologie",
+    "projects": "Progetti",
+    "contact": "Contatto"
+  },
+  "downloadMessage": "Scarica CV",
+  "welcomeMessage": "Ciao, sono ",
+  "aboutText": {
+    "paragraph1": "Sviluppatore con Formazione Professionale Superiore in Applicazioni Web e Multiplatform.",
+    "paragraph2": "Appassionato di tecnologia e in continua evoluzione, espando le mie conoscenze su piattaforme educative digitali.",
+    "paragraph3": "Competenze principali:",
+    "paragraph4": "Amo trasformare idee in esperienze funzionali e attraenti."
+  },
+  "languages": {
+    "title": "Lingue:",
+    "spanish": "Spagnolo - Madrelingua",
+    "english": "Inglese - Intermedio",
+    "italian": "Italiano - Avanzato",
+    "french": "Francese - Base"
+  }
+}

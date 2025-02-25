@@ -1,0 +1,24 @@
+{
+  "menuTitle": "Desarrollador Web",
+  "navMenu": {
+    "about": "Acerca de mí",
+    "skills": "Tecnologías",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "downloadMessage": "Descargar CV",
+  "welcomeMessage": "Hola, soy ",
+  "aboutText": {
+    "paragraph1": "Desarrollador con Formación Profesional de Grado Superior en Aplicaciones Web y Multiplataforma.",
+    "paragraph2": "Apasionado de la tecnología y en constante evolución, amplío mis conocimientos en plataformas educativas digitales.",
+    "paragraph3": "Habilidades principales:",
+    "paragraph4": "Me encanta transformar ideas en experiencias funcionales y atractivas."
+  },
+  "languages": {
+    "title": "Idiomas:",
+    "spanish": "Español - Nativo",
+    "english": "Inglés - Medio",
+    "italian": "Italiano - Alto",
+    "french": "Frances - Básico"
+  }
+}
