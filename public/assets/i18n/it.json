@@ -7,6 +7,8 @@
     "contact": "Contatto"
   },
   "downloadMessage": "Scarica CV",
+  "visitWebsite": "Visita sito web",
+  "visitRepository": "Vai al repository",
   "welcomeMessage": "Ciao, sono ",
   "aboutText": {
     "paragraph1": "Sviluppatore con Formazione Professionale Superiore in Applicazioni Web e Multiplatform.",
@@ -28,5 +30,27 @@
     "css": "Frameworks CSS",
     "mobile": "Sviluppo mobile",
     "versions": "Controllo versioni"
+  },
+  "projects": {
+    "sophiesBurgers": {
+      "paragraph1": "Applicazione sviluppata con React - TailwindCSS da mio progetto finale di Formazione Professionale in DAW.",
+      "paragraph2": "Formulari di contatto e invio di email con Nodemailer.",
+      "paragraph3": "Validazione di indirizzi con API di Google.",
+      "paragraph4": "API REST creata da zero ( Node - Express ).",
+      "paragraph5": "Middleware con autenticazione JWT.",
+      "paragraph6": "Sequelize per la database MySQL."
+    },
+    "countriesApp": {
+      "paragraph1": "Applicazione sviluppata con Angular - TailwindCSS.",
+      "paragraph2": "Ricerca di paesi per nome o per capitale.",
+      "paragraph3": "Elenco di paesi classificati per continenti.",
+      "paragraph4": "Puoi vedere informazioni dettagliate di ogni paese, come bandiera, scudo, mappa, popolazione, lingue e frontiere.",
+      "paragraph5": "Sviluppato con componenti standalone, operatori RxJS e Angular Material.",
+      "paragraph6": "Utilizza API REST Countries."
+    }
+  },
+  "contact": {
+    "title": "Grazie per la visita !",
+    "paragraph": "I miei dati di contatto:"
   }
 }

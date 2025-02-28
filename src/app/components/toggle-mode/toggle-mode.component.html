@@ -1,1 +1,7 @@
-<button [ngClass]="isDarkMode() ? 'text-yellow-300' : 'text-gray-100'" class="bg-slate-500 rounded-2xl px-2 pt-1" (click)="toggleTheme()"><mat-icon>{{ isDarkMode() ? 'light_mode' : 'dark_mode' }}</mat-icon></button>
+<button
+  [ngClass]="isDarkMode() ? 'text-yellow-300' : 'text-gray-100'"
+  class="bg-slate-500 rounded-2xl px-2 pt-1"
+  (click)="toggleTheme()"
+>
+  <mat-icon>{{ isDarkMode() ? "light_mode" : "dark_mode" }}</mat-icon>
+</button>
