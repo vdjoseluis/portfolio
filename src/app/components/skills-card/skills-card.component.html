@@ -1,1 +1,19 @@
-<p>skills-card works!</p>
+<section
+  class="flex flex-col items-center justify-center py-6 w-[400px] sm:w-[500px] px-10 gap-4 shadow-2xl shadow-slate-500 rounded-b-3xl"
+>
+  <h1 class="text-center text-xl typing-animation title-color" [translate]="'skillsTitle.' + skills()!.title">
+
+  </h1>
+  <div class="flex justify-around gap-6">
+    @for (skill of skills()?.skills; track $index) {
+    <div class="flex flex-col items-center gap-2">
+      <img
+        [src]="'/assets/skills/' + skill + '.svg'"
+        class="h-14 md:h-20 hover:scale-125 transition ease-in duration-300"
+        [alt]="skill"
+      />
+      <figcaption>{{ skill }}</figcaption>
+    </div>
+    }
+  </div>
+</section>

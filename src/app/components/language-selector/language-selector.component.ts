@@ -16,7 +16,7 @@ export default class LanguageSelectorComponent {
   currentLang = this.languageService.currentLang;
 
   dropdownOpen = false;
-  selectedLang = 'es';
+  //selectedLang = 'es';
 
   languages = signal ([
     { key: 'es', value: 'ES' },
@@ -29,7 +29,7 @@ export default class LanguageSelectorComponent {
   }
 
   selectLang(lang: string) {
-    this.selectedLang = lang;
+    //this.selectedLang = lang;
     this.dropdownOpen = false;
 
     this.languageService.changeLang(lang);

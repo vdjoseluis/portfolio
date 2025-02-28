@@ -20,5 +20,13 @@
     "english": "Inglese - Intermedio",
     "italian": "Italiano - Avanzato",
     "french": "Francese - Base"
+  },
+  "skillsTitle": {
+    "fundamentals": "Tecnologie fundamentali",
+    "hard": "Competenze principali",
+    "database": "Databases",
+    "css": "Frameworks CSS",
+    "mobile": "Sviluppo mobile",
+    "versions": "Controllo versioni"
   }
 }

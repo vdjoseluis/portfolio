@@ -1,7 +1,7 @@
 <div class="relative inline-block">
   <button (click)="toggleDropdown()" class="bg-slate-500 rounded-md px-2 py-1 text-white flex items-center">
-    <img [src]="'/assets/flags/' + selectedLang + '.svg'" class="w-5 h-5 mr-2" />
-    {{ selectedLang.toUpperCase() }}
+    <img [src]="'/assets/flags/' + currentLang() + '.svg'" class="w-5 h-5 mr-2" />
+    {{ currentLang().toUpperCase() }}
   </button>
 
   @if (dropdownOpen){
