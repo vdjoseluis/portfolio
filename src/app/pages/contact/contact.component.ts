@@ -1,11 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, MatIconModule],
   templateUrl: './contact.component.html',
   styles: ``
 })

@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild, viewChild, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
@@ -9,7 +8,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [RouterLink, MatTooltipModule, TranslateModule, CommonModule, MatIconModule],
+  imports: [MatTooltipModule, TranslateModule, CommonModule, MatIconModule],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
