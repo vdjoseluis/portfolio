@@ -6,6 +6,9 @@ import { SsrCookieService } from 'ngx-cookie-service-ssr';
 import { LanguageService, SERVER_LANG_TOKEN } from './services/language.service';
 import { ThemeService } from './services/theme.service';
 
+import {inject as vercelInject} from '@vercel/analytics';
+import AboutComponent from './pages/about/about.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -32,5 +35,7 @@ export class AppComponent {
       (this.cookie.check('lang') ? this.cookie.get('lang') : 'es');
 
     this.languageService.changeLang(lang);
+
+    vercelInject();
   }
 }
