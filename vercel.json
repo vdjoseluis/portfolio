@@ -1,11 +1,13 @@
 {
-  "version": 3,
-  "buildCommand": "npm run build:ssr",
-  "outputDirectory": "dist/my-portfolio/browser",
+  "version": 2,
+  "public": true,
+  "builds": [
+      {
+          "src": "dist/my-portfolio/**/*",
+          "use": "@vercel/static"
+      }
+  ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "dist/my-portfolio/server/server.mjs"
-    }
+      { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
