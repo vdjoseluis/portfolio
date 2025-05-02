@@ -1,17 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import { TranslateModule } from '@ngx-translate/core';
-import { MatIconModule } from '@angular/material/icon';
 import { Meta, Title } from '@angular/platform-browser';
+import SophiesBurgersComponent from "../../components/projects/sophies-burgers/sophies-burgers.component";
+import CountriesAppComponent from "../../components/projects/countries-app/countries-app.component";
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, TranslateModule, MatTooltipModule, MatTabsModule, MatIconModule],
+  imports: [CommonModule, TranslateModule, MatTabsModule, SophiesBurgersComponent, CountriesAppComponent],
   templateUrl: './projects.component.html',
-  styles: ``
 })
 export default class ProjectsComponent implements OnInit {
   private title = inject(Title);
@@ -25,7 +24,7 @@ export default class ProjectsComponent implements OnInit {
     this.meta.updateTag({ name: 'og:image', content: 'https://joseluis-portfolio.vercel.app/foto.png' });
     this.meta.updateTag({ name: 'keywords', content: 'José Luis Vásquez Drouet, Frontend, vdjoseluis, Angular, Portfolio' });
   }
-  
+
   activeTabIndex = 0;
 
   onTabChange(index: number) {

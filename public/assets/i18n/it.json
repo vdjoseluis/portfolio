@@ -9,7 +9,7 @@
   "downloadMessage": "Scarica CV",
   "visitWebsite": "Visita sito web",
   "visitRepository": "Vai al repository",
-  "portfolioMessage":"Portfolio in costruzione",
+  "portfolioMessage": "Portfolio in costruzione",
   "welcomeMessage": "Ciao, sono ",
   "aboutText": {
     "paragraph1": "Sviluppatore con Formazione Professionale Superiore in Applicazioni Web e Multiplatform.",
@@ -26,8 +26,8 @@
   },
   "skillsTitle": {
     "fundamentals": "Tecnologie fundamentali",
-    "hard": "Competenze principali",
-    "database": "Databases",
+    "frontend": "Sviluppo Frontend",
+    "backend": "Backend",
     "css": "Frameworks CSS",
     "mobile": "Sviluppo mobile",
     "versions": "Controllo versioni"
@@ -48,6 +48,22 @@
       "paragraph4": "Puoi vedere informazioni dettagliate di ogni paese, come bandiera, scudo, mappa, popolazione, lingue e frontiere.",
       "paragraph5": "Sviluppato con componenti standalone, operatori RxJS e Angular Material.",
       "paragraph6": "Utilizza API REST Countries."
+    },
+    "vdlogisticsDesktop": {
+      "paragraph1": "Applicazione Java Swing sviluppata con NetBeans IDE 25.",
+      "paragraph2": "Gestione e controllo delle operazioni logistiche.",
+      "paragraph3": "Viste tabellari di servizi, clienti, utenti, incidenti e log.",
+      "paragraph4": "Form per operazioni CRUD con validazioni.",
+      "paragraph5": "Backend integrato con Firebase: Authentication, Firestore, Storage, Messaging e Functions.",
+      "paragraph6": "Sincronizzazione in tempo reale con l'app Android per gli operatori."
+    },
+    "vdlogisticsMobile": {
+      "paragraph1": "Applicazione Kotlin sviluppata con Android Studio utilizzando Jetpack Compose.",
+      "paragraph2": "Gestione delle funzioni degli operatori logistici con notifiche push.",
+      "paragraph3": "Vista dei servizi assegnati, classificati per stato e ordinati per data.",
+      "paragraph4": "Vista dettagliata dei servizi con allegati e aggiornamenti di stato.",
+      "paragraph5": "Backend integrato con Firebase: Authentication, Firestore, Storage, Messaging e Functions.",
+      "paragraph6": "Sincronizzazione in tempo reale con l'app desktop della sede centrale."
     }
   },
   "contact": {

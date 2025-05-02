@@ -9,7 +9,7 @@
   "downloadMessage": "Descargar CV",
   "visitWebsite": "Visitar sitio web",
   "visitRepository": "Ir al repositorio",
-  "portfolioMessage":"Portfolio en construcción",
+  "portfolioMessage": "Portfolio en construcción",
   "welcomeMessage": "Hola, soy ",
   "aboutText": {
     "paragraph1": "Desarrollador con Formación Profesional de Grado Superior en Aplicaciones Web y Multiplataforma.",
@@ -26,8 +26,8 @@
   },
   "skillsTitle": {
     "fundamentals": "Tecnologías fundamentales",
-    "hard": "Habilidades principales",
-    "database": "Bases de datos",
+    "frontend": "Desarrollo Frontend",
+    "backend": "Backend",
     "css": "Frameworks CSS",
     "mobile": "Desarrollo móvil",
     "versions": "Control de versiones"
@@ -48,6 +48,22 @@
       "paragraph4": "Se puede ver información detallada de cada país, como bandera, escudo, mapa, población, idiomas y fronteras.",
       "paragraph5": "Desarrollado con componentes standalone, operadores RxJS y Angular Material.",
       "paragraph6": "Consume API REST Countries."
+    },
+    "vdlogisticsDesktop": {
+      "paragraph1": "Aplicación Java Swing desarrollada con NetBeans IDE 25.",
+      "paragraph2": "Gestión y control de operarciones logísticas.",
+      "paragraph3": "Vista de tablas de servicios, clientes, usuarios, incidencias y logs.",
+      "paragraph4": "Formularios para operaciones CRUD con validaciones.",
+      "paragraph5": "Backend integrado con Firebase. Authentication, Firestore, Storage, Messaging y Functions.",
+      "paragraph6": "Sicronización en tiempo real con app android para operarios."
+    },
+    "vdlogisticsMobile": {
+      "paragraph1": "Aplicación Kotlin desarrollada con Android Studio con Jetpack Compose.",
+      "paragraph2": "Gestión de funciones de operarios logísticos con notificaciones push.",
+      "paragraph3": "Vista de servicios asignados, clasificados por estado y ordenados por fecha.",
+      "paragraph4": "Vista de detalles de servicios con archivos adjuntos y cambios de estado.",
+      "paragraph5": "Backend integrado con Firebase. Authentication, Firestore, Storage, Messaging y Functions.",
+      "paragraph6": "Sicronización en tiempo real con app escritorio de la central."
     }
   },
   "contact": {

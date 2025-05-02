@@ -24,8 +24,8 @@ export default class SkillsComponent implements OnInit {
   }
 
   fundamentals = { title: 'fundamentals', skills: ['HTML', 'CSS', 'Javascript', 'Typescript'] };
-  hard = { title: 'hard', skills: ['Angular', 'Node', 'React'] };
-  database = { title: 'database', skills: ['MongoDB', 'MySQL'] };
+  frontend = { title: 'frontend', skills: ['Angular', 'React'] };
+  backend = { title: 'backend', skills: ['Node', 'Java', 'MongoDB', 'MySQL'] };
   css = { title: 'css', skills: ['Bootstrap', 'Tailwind'] };
   mobile = { title: 'mobile', skills: ['Android', 'Kotlin'] };
   versions = { title: 'versions', skills: ['Git', 'Github'] };

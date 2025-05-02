@@ -9,7 +9,7 @@
   "downloadMessage": "Download CV",
   "visitWebsite": "Visit website",
   "visitRepository": "Go to repository",
-  "portfolioMessage":"Portfolio under construction",
+  "portfolioMessage": "Portfolio under construction",
   "welcomeMessage": "Hello, I'm ",
   "aboutText": {
     "paragraph1": "Developer with Advanced Vocational Training in Web and Multiplatform Applications.",
@@ -26,8 +26,8 @@
   },
   "skillsTitle": {
     "fundamentals": "Fundamental technologies",
-    "hard": "Main skills",
-    "database": "Databases",
+    "frontend": "Frontend Development",
+    "backend": "Backend",
     "css": "CSS frameworks",
     "mobile": "Mobile development",
     "versions": "Version control"
@@ -48,6 +48,22 @@
       "paragraph4": "You can see detailed information of each country, such as flag, shield, map, population, languages and borders.",
       "paragraph5": "Developed with standalone components, RxJS operators and Angular Material.",
       "paragraph6": "Consumes REST API Countries."
+    },
+    "vdlogisticsDesktop": {
+      "paragraph1": "Java Swing application developed with NetBeans IDE 25.",
+      "paragraph2": "Management and control of logistics operations.",
+      "paragraph3": "Table views for services, clients, users, incidents, and logs.",
+      "paragraph4": "Forms for CRUD operations with validations.",
+      "paragraph5": "Backend integrated with Firebase: Authentication, Firestore, Storage, Messaging, and Functions.",
+      "paragraph6": "Real-time synchronization with the Android app for operators."
+    },
+    "vdlogisticsMobile": {
+      "paragraph1": "Kotlin application developed with Android Studio using Jetpack Compose.",
+      "paragraph2": "Management of logistics operator functions with push notifications.",
+      "paragraph3": "View of assigned services, categorized by status and sorted by date.",
+      "paragraph4": "Service detail view with attachments and status updates.",
+      "paragraph5": "Backend integrated with Firebase: Authentication, Firestore, Storage, Messaging, and Functions.",
+      "paragraph6": "Real-time synchronization with the desktop app at the central office."
     }
   },
   "contact": {

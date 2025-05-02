@@ -1,58 +1,33 @@
 <section
-  class="w-full xl:max-w-[80%] xl:h-[85vh] mx-auto py-6 px-4 shadow-2xl shadow-slate-500 rounded-b-3xl"
+  class="w-full xl:max-w-[80%] 2xl:h-[85vh] mx-auto py-6 px-4 shadow-2xl shadow-slate-500 rounded-b-3xl"
 >
-<h1 class="text-xl md:text-2xl tracking-widest ps-6 mb-2 title-color">{{ "navMenu.projects" | translate }}:</h1>
-
-<mat-tab-group (selectedIndexChange)="onTabChange($event)" animationDuration="800ms">
-  <mat-tab>
-    <ng-template mat-tab-label>
-      <span class="title-color md:text-2xl tracking-widest" [ngClass]="activeTabIndex===1 ? 'opacity-50' : ''">Sophie's Burgers</span>
-      @if (activeTabIndex === 0) {
-        <span class="title-color sm:ps-10"><mat-icon>arrow_forward</mat-icon><mat-icon>arrow_forward</mat-icon></span>
-      }
-    </ng-template>
-    <article class="mt-4">
-      <div class="flex justify-center items-center gap-10 flex-wrap">
-        <img src="/assets/screenshots/sophies1.png" alt="Screenshot Sophies Burgers app" class="md:max-w-[80%] 2xl:max-w-[35%]">
-        <div class="flex flex-col md:max-w-[80%] 2xl:max-w-[35%]">
-          <a href="https://sophies-burgers.vercel.app/" target="_blank" class="flex gap-2 title-color pb-6 hover:underline" matTooltip="{{'visitWebsite'| translate}}"><mat-icon>language</mat-icon>  https://sophies-burgers.vercel.app/</a>
-          <p>{{ "projects.sophiesBurgers.paragraph1" | translate }}</p>
-          <p>{{ "projects.sophiesBurgers.paragraph2" | translate }}</p>
-          <p>{{ "projects.sophiesBurgers.paragraph3" | translate }}</p>
-          <p>{{ "projects.sophiesBurgers.paragraph4" | translate }}</p>
-          <p>{{ "projects.sophiesBurgers.paragraph5" | translate }}</p>
-          <p>{{ "projects.sophiesBurgers.paragraph6" | translate }}</p>
-          <a href="https://github.com/vdjoseluis/sophies-burgers" target="_blank" class="flex gap-2 title-color pt-6 hover:underline" matTooltip="{{'visitRepository'| translate}}"> <mat-icon>code</mat-icon>  https://github.com/vdjoseluis/sophies-burgers</a>
-        </div>
-        <img src="/assets/screenshots/sophies2.png" alt="Screenshot Sophies Burgers app" class="md:max-w-[80%] 2xl:max-w-[35%]">
-        <img src="/assets/screenshots/sophies3.png" alt="Screenshot Sophies Burgers app" class="md:max-w-[80%] 2xl:max-w-[35%]">
-      </div>
-    </article>
-  </mat-tab>
-  <mat-tab>
-    <ng-template mat-tab-label>
-      @if (activeTabIndex === 1) {
-        <span class="title-color sm:pe-10"><mat-icon>arrow_back</mat-icon><mat-icon>arrow_back</mat-icon></span>
-      }
-      <span class="title-color md:text-2xl tracking-widest" [ngClass]="activeTabIndex===0 ? 'opacity-50' : ''">Countries App</span>
-    </ng-template>
-    <article class="mt-4">
-      <div class="flex justify-center items-center gap-10 flex-wrap">
-        <img src="/assets/screenshots/countries1.png" alt="Screenshot Countries app" class="md:max-w-[80%] 2xl:max-w-[35%]">
-        <div class="flex flex-col md:max-w-[80%] 2xl:max-w-[35%]">
-          <a href="https://countries-app-rust-two.vercel.app/" target="_blank" class="flex gap-2 title-color pb-6 hover:underline" matTooltip="{{'visitWebsite'| translate}}"><mat-icon>language</mat-icon> https://countries-app-rust-two.vercel.app/</a>
-          <p>{{ "projects.countriesApp.paragraph1" | translate }}</p>
-          <p>{{ "projects.countriesApp.paragraph2" | translate }}</p>
-          <p>{{ "projects.countriesApp.paragraph3" | translate }}</p>
-          <p>{{ "projects.countriesApp.paragraph4" | translate }}</p>
-          <p>{{ "projects.countriesApp.paragraph5" | translate }}</p>
-          <p>{{ "projects.countriesApp.paragraph6" | translate }}</p>
-          <a href="https://github.com/vdjoseluis/countries-app" target="_blank" class="flex gap-2 title-color pt-6 hover:underline" matTooltip="{{'visitRepository'| translate}}"><mat-icon>code</mat-icon>  https://github.com/vdjoseluis/countries-app</a>
-        </div>
-        <img src="/assets/screenshots/countries2.png" alt="Screenshot Countries app" class="md:max-w-[80%] 2xl:max-w-[35%]">
-        <img src="/assets/screenshots/countries3.png" alt="Screenshot Countries app" class="md:max-w-[80%] 2xl:max-w-[35%]">
-      </div>
-    </article>
-  </mat-tab>
-</mat-tab-group>
+  <h1 class="text-xl md:text-2xl tracking-widest ps-6 mb-2 title-color">{{ "navMenu.projects" | translate }}:</h1>
+  <div class="hidden md:block">
+    <mat-tab-group (selectedIndexChange)="onTabChange($event)" animationDuration="800ms">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=0 ? 'opacity-40' : ''">Sophie's Burgers</span>
+        </ng-template>
+        <app-sophies-burgers/>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=1 ? 'opacity-40' : ''">Countries App</span>
+        </ng-template>
+        <app-countries-app/>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=2 ? 'opacity-40' : ''">VD Logistics Desktop</span>
+        </ng-template>
+        <app-countries-app/>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=3 ? 'opacity-40' : ''">VD Logistics Mobile</span>
+        </ng-template>
+        <app-countries-app/>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
 </section>
