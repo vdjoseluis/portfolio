@@ -5,11 +5,14 @@ import { TranslateModule } from '@ngx-translate/core';
 import { Meta, Title } from '@angular/platform-browser';
 import SophiesBurgersComponent from "../../components/projects/sophies-burgers/sophies-burgers.component";
 import CountriesAppComponent from "../../components/projects/countries-app/countries-app.component";
+import VdlogisticsMobileComponent from "../../components/projects/vdlogistics-mobile/vdlogistics-mobile.component";
+import VdlogisticsDesktopComponent from "../../components/projects/vdlogistics-desktop/vdlogistics-desktop.component";
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, TranslateModule, MatTabsModule, SophiesBurgersComponent, CountriesAppComponent],
+  imports: [CommonModule, TranslateModule, MatTabsModule, MatIconModule, SophiesBurgersComponent, CountriesAppComponent, VdlogisticsMobileComponent, VdlogisticsDesktopComponent],
   templateUrl: './projects.component.html',
 })
 export default class ProjectsComponent implements OnInit {
@@ -29,5 +32,22 @@ export default class ProjectsComponent implements OnInit {
 
   onTabChange(index: number) {
     this.activeTabIndex = index;
+  }
+
+  dropdownOpen = false;
+  toggleDropdown() {
+    this.dropdownOpen = !this.dropdownOpen;
+  }
+
+  projects = [
+    { name: 'sophies-burgers', component: SophiesBurgersComponent },
+    { name: 'countries-app', component: CountriesAppComponent },
+    { name: 'vdlogistics-desktop', component: VdlogisticsDesktopComponent },
+    { name: 'vdlogistics-mobile', component: VdlogisticsMobileComponent },
+  ];
+
+  selectProject(index: number) {
+    this.activeTabIndex = index;
+    this.dropdownOpen = false;
   }
 }
