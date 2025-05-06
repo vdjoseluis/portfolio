@@ -1,9 +1,10 @@
-import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild, viewChild, inject } from '@angular/core';
-import {MatTooltipModule} from '@angular/material/tooltip';
+import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild, inject } from '@angular/core';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
-import { Meta, Title } from '@angular/platform-browser';
+import { SchemaService } from '../../services/schema.service';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-about',
@@ -12,20 +13,37 @@ import { Meta, Title } from '@angular/platform-browser';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export default class AboutComponent implements AfterViewInit, OnInit{
-  private title = inject(Title);
-  private meta = inject(Meta);
+export default class AboutComponent implements AfterViewInit, OnInit {
+  private seo = inject(SeoService);
+  private schema = inject(SchemaService);
 
   @ViewChild('paragraphsContainer') paragraphsContainer!: ElementRef;
   constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
-    this.title.setTitle('About me | José Luis Vásquez Drouet');
-    this.meta.updateTag({ name: 'description', content: 'About me | José Luis' });
-    this.meta.updateTag({ name: 'og:title', content: 'About me | José Luis' });
-    this.meta.updateTag({ name: 'og:description', content: 'About me | José Luis' });
-    this.meta.updateTag({ name: 'og:image', content: 'https://joseluis-portfolio.vercel.app/foto.png' });
-    this.meta.updateTag({ name: 'keywords', content: 'José Luis Vásquez Drouet, Frontend, vdjoseluis, Angular, Portfolio' });
+    this.seo.updateMetaData({
+      title: 'Desarrollador Web y Multiplataforma | José Luis Vásquez Drouet',
+      description: 'Soy José Luis Vásquez Drouet, desarrollador web y multiplataforma.',
+      url: 'https://vdjoseluis-portfolio.vercel.app/',
+      image: 'https://vdjoseluis-portfolio.vercel.app/foto.png',
+      keywords: 'José Luis Vásquez Drouet, Frontend, vdjoseluis, Angular, Portfolio, Desarrollador web, Desarrollador multiplataforma, Málaga'
+    });
+
+    this.schema.setSchema({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "José Luis Vásquez Drouet",
+      "jobTitle": "Desarrollador web y multiplataforma",
+      "url": "https://vdjoseluis-portfolio.vercel.app/about",
+      "image": "https://vdjoseluis-portfolio.vercel.app/foto.png",
+      "sameAs": [
+        "https://github.com/vdjoseluis",
+        "https://linkedin.com/in/vdjoseluis"
+      ],
+      "description": "Desarrollador frontend con experiencia en Angular, TypeScript y aplicaciones multiplataforma.",
+      "keywords": "José Luis Vásquez Drouet, Frontend, vdjoseluis, Angular, Portfolio, Desarrollador web, Desarrollador multiplataforma, Málaga"
+    });
+
   }
 
   ngAfterViewInit(): void {
