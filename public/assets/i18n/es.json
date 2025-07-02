@@ -64,6 +64,14 @@
       "paragraph4": "Vista de detalles de servicios con archivos adjuntos y cambios de estado.",
       "paragraph5": "Backend integrado con Firebase. Authentication, Firestore, Storage, Messaging y Functions.",
       "paragraph6": "Sicronización en tiempo real con app escritorio de la central."
+    },
+    "vdlogisticsWeb": {
+      "paragraph1": "Aplicación web desarrollada con Angular 19+ - TailwindCSS.",
+      "paragraph2": "Gestión y control de operarciones logísticas.",
+      "paragraph3": "Vista de servicios, usuarios, incidencias y clientes con Tabs de Angular Material.",
+      "paragraph4": "Vista de detalles con formularios reactivos y validaciones.",
+      "paragraph5": "Backend integrado con Firebase. Authentication, Firestore, Storage, Messaging y Functions.",
+      "paragraph6": "Uso de la librería AngularFire para la integración con Firebase."
     }
   },
   "contact": {

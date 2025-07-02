@@ -9,11 +9,12 @@ import VdlogisticsDesktopComponent from "../../components/projects/vdlogistics-d
 import { MatIconModule } from '@angular/material/icon';
 import { SeoService } from '../../services/seo.service';
 import { SchemaService } from '../../services/schema.service';
+import VdlogisticsWebComponent from '../../components/projects/vdlogistics-web/vdlogistics-web.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, TranslateModule, MatTabsModule, MatIconModule, SophiesBurgersComponent, CountriesAppComponent, VdlogisticsMobileComponent, VdlogisticsDesktopComponent],
+  imports: [CommonModule, TranslateModule, MatTabsModule, MatIconModule, SophiesBurgersComponent, CountriesAppComponent, VdlogisticsMobileComponent, VdlogisticsDesktopComponent, VdlogisticsWebComponent],
   templateUrl: './projects.component.html',
 })
 export default class ProjectsComponent implements OnInit {
@@ -60,6 +61,7 @@ export default class ProjectsComponent implements OnInit {
     { name: 'countries-app', component: CountriesAppComponent },
     { name: 'vdlogistics-desktop', component: VdlogisticsDesktopComponent },
     { name: 'vdlogistics-mobile', component: VdlogisticsMobileComponent },
+    { name: 'vdlogistics-web', component: VdlogisticsWebComponent }
   ];
 
   selectProject(index: number) {

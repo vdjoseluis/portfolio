@@ -30,6 +30,7 @@
         @case (1) {<app-countries-app />}
         @case (2) {<app-vdlogistics-desktop />}
         @case (3) {<app-vdlogistics-mobile />}
+        @case (4) {<app-vdlogistics-web />}
       }
     </div>
   </div>
@@ -60,6 +61,12 @@
           <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=3 ? 'opacity-40' : ''">VD Logistics Mobile</span>
         </ng-template>
         <app-vdlogistics-mobile/>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=4 ? 'opacity-40' : ''">VD Logistics Web</span>
+        </ng-template>
+        <app-vdlogistics-web/>
       </mat-tab>
     </mat-tab-group>
   </div>
