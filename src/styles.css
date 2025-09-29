@@ -2,10 +2,7 @@
 
 html, body {
   @apply min-h-screen bg-gray-200 text-slate-700;
-}
-body {
-  margin: 0;
-  font-family: Consolas;
+  font-family: 'Consolas', 'Roboto', 'Arial', sans-serif;
 }
 
 :root {
