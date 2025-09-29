@@ -26,11 +26,12 @@
 
     <div class="mt-6">
       @switch (activeTabIndex) {
-        @case (0) {<app-sophies-burgers />}
-        @case (1) {<app-countries-app />}
-        @case (2) {<app-vdlogistics-desktop />}
-        @case (3) {<app-vdlogistics-mobile />}
-        @case (4) {<app-vdlogistics-web />}
+        @case (0) {<app-code-and-cocktails />}
+        @case (1) {<app-sophies-burgers />}
+        @case (2) {<app-countries-app />}
+        @case (3) {<app-vdlogistics-desktop />}
+        @case (4) {<app-vdlogistics-mobile />}
+        @case (5) {<app-vdlogistics-web />}
       }
     </div>
   </div>
@@ -40,31 +41,37 @@
     <mat-tab-group (selectedIndexChange)="onTabChange($event)" animationDuration="800ms">
       <mat-tab>
         <ng-template mat-tab-label>
-          <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=0 ? 'opacity-40' : ''">Sophie's Burgers</span>
+          <span class="title-color 2xl:text-xl xl:tracking-widest" [ngClass]="activeTabIndex!=0 ? 'opacity-40' : ''">Code & Cocktails</span>
+        </ng-template>
+        <app-code-and-cocktails/>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <span class="title-color 2xl:text-xl xl:tracking-widest" [ngClass]="activeTabIndex!=1 ? 'opacity-40' : ''">Sophie's Burgers</span>
         </ng-template>
         <app-sophies-burgers/>
       </mat-tab>
       <mat-tab>
         <ng-template mat-tab-label>
-          <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=1 ? 'opacity-40' : ''">Countries App</span>
+          <span class="title-color 2xl:text-xl xl:tracking-widest" [ngClass]="activeTabIndex!=2 ? 'opacity-40' : ''">Countries App</span>
         </ng-template>
         <app-countries-app/>
       </mat-tab>
       <mat-tab>
         <ng-template mat-tab-label>
-          <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=2 ? 'opacity-40' : ''">VD Logistics Desktop</span>
+          <span class="title-color 2xl:text-xl xl:tracking-widest" [ngClass]="activeTabIndex!=3 ? 'opacity-40' : ''">VD Logistics Desktop</span>
         </ng-template>
         <app-vdlogistics-desktop/>
       </mat-tab>
       <mat-tab>
         <ng-template mat-tab-label>
-          <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=3 ? 'opacity-40' : ''">VD Logistics Mobile</span>
+          <span class="title-color 2xl:text-xl xl:tracking-widest" [ngClass]="activeTabIndex!=4 ? 'opacity-40' : ''">VD Logistics Mobile</span>
         </ng-template>
         <app-vdlogistics-mobile/>
       </mat-tab>
       <mat-tab>
         <ng-template mat-tab-label>
-          <span class="title-color xl:text-xl lg:tracking-widest" [ngClass]="activeTabIndex!=4 ? 'opacity-40' : ''">VD Logistics Web</span>
+          <span class="title-color 2xl:text-xl xl:tracking-widest" [ngClass]="activeTabIndex!=5 ? 'opacity-40' : ''">VD Logistics Web</span>
         </ng-template>
         <app-vdlogistics-web/>
       </mat-tab>

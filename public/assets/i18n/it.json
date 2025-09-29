@@ -72,6 +72,14 @@
       "paragraph4": "Vista dettagliata con form reattivi e validazioni.",
       "paragraph5": "Backend integrato con Firebase: Authentication, Firestore, Storage, Messaging e Functions.",
       "paragraph6": "Utilizza la libreria AngularFire per l'integrazione con Firebase."
+    },
+    "codeAndCocktails": {
+      "paragraph1": "App sviluppata con Angular - TailwindCSS - DaisyUI - Material.",
+      "paragraph2": "Cerca cocktail per nome o categoria.",
+      "paragraph3": "Mostra i dettagli dei cocktail, inclusi ingredienti e istruzioni.",
+      "paragraph4": "Permette di salvare i cocktail preferiti in localStorage.",
+      "paragraph5": "Design responsive per un'esperienza ottimale su tutti i dispositivi.",
+      "paragraph6": "Utilizza l'API TheCocktailDB."
     }
   },
   "contact": {

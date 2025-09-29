@@ -10,11 +10,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { SeoService } from '../../services/seo.service';
 import { SchemaService } from '../../services/schema.service';
 import VdlogisticsWebComponent from '../../components/projects/vdlogistics-web/vdlogistics-web.component';
+import { CodeAndCocktailsComponent } from '../../components/projects/code-and-cocktails/code-and-cocktails.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, TranslateModule, MatTabsModule, MatIconModule, SophiesBurgersComponent, CountriesAppComponent, VdlogisticsMobileComponent, VdlogisticsDesktopComponent, VdlogisticsWebComponent],
+  imports: [CommonModule, TranslateModule, MatTabsModule, MatIconModule, CodeAndCocktailsComponent, SophiesBurgersComponent, CountriesAppComponent, VdlogisticsMobileComponent, VdlogisticsDesktopComponent, VdlogisticsWebComponent],
   templateUrl: './projects.component.html',
 })
 export default class ProjectsComponent implements OnInit {
@@ -57,6 +58,7 @@ export default class ProjectsComponent implements OnInit {
   }
 
   projects = [
+    { name: 'code-and-cocktails', component: CodeAndCocktailsComponent },
     { name: 'sophies-burgers', component: SophiesBurgersComponent },
     { name: 'countries-app', component: CountriesAppComponent },
     { name: 'vdlogistics-desktop', component: VdlogisticsDesktopComponent },
